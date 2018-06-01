@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2018-06-01</Date>
+  <Beta>False</Beta>
+  <Category>Docker</Category>
+  <Name>DockerRegistry</Name>
+  <Project>https://hub.docker.com/_/registry/</Project>
+  <Overview>
+    Docker Registry stores Docker images
+  </Overview>
+  <Description>
+    The Docker Registry allows you to run a private Docker Registry instance that you can push your images into
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/config[/b] : this is where Docker Registry will store it's databases and configuration.[br][br]
+    [b]Tip:[/b] This template was created by modifying the PlexMediaServer template so I'm not sure I've got it right yet...
+  </Description>
+  <Registry>https://hub.docker.com/_/registry/</Registry>
+  <GitHub>https://hub.docker.com/_/registry/</GitHub>
+  <Repository>registry</Repository>
+  <Support>http://www.binky.co.uk</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/DockerRegistry</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:5000]/web/index.html</WebUI>
+  <Banner></Banner>
+  <Icon></Icon>
+</Containers>
