@@ -11,7 +11,7 @@
   <Description>
     The Docker Registry allows you to run a private Docker Registry instance that you can push your images into
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
-    [b]/config[/b] : this is where Docker Registry will store it's databases and configuration.[br][br]
+    [b]/var/lib/registry[/b] : this is where Docker Registry will store it's databases and configuration.[br][br]
     [b]Tip:[/b] This template was created by modifying the PlexMediaServer template so I'm not sure I've got it right yet...
   </Description>
   <Registry>https://hub.docker.com/_/registry/</Registry>
@@ -28,7 +28,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/DockerRegistry</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <ContainerDir>/var/lib/registry</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
