@@ -9,10 +9,9 @@
     Docker Registry stores Docker images
   </Overview>
   <Description>
-    The Docker Registry allows you to run a private Docker Registry instance that you can push your images into
-    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    The Docker Registry allows you to run a private Docker Registry instance that you can push your images into.[br]
+    [b][span style='color: #E80000;']Required:[/span][/b][br]
     [b]/var/lib/registry[/b] : this is where Docker Registry will store it's databases and configuration.[br][br]
-    [b]Tip:[/b] This template was created by modifying the PlexMediaServer template so I'm not sure I've got it right yet...
   </Description>
   <Registry>https://hub.docker.com/_/registry/</Registry>
   <GitHub>https://hub.docker.com/_/registry/</GitHub>
@@ -32,7 +31,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:5000]/v2/</WebUI>
-  <Banner></Banner>
-  <Icon></Icon>
+  <WebUI/>
+  <Banner/>
+  <Icon/>
 </Containers>
