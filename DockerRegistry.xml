@@ -17,9 +17,9 @@
   <Registry>https://hub.docker.com/_/registry/</Registry>
   <GitHub>https://hub.docker.com/_/registry/</GitHub>
   <Repository>registry</Repository>
-  <Support>http://www.binky.co.uk</Support>
+  <Support>https://github.com/pbinks/unraid-docker-registry/issues</Support>
   <BindTime>true</BindTime>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Networking>
     <Mode>host</Mode>
     <Publish/>
@@ -32,7 +32,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:5000]/web/index.html</WebUI>
+  <WebUI>http://[IP]:[PORT:5000]/v2/</WebUI>
   <Banner></Banner>
   <Icon></Icon>
 </Containers>
