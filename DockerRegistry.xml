@@ -33,5 +33,5 @@
   </Data>
   <WebUI/>
   <Banner/>
-  <Icon/>
+  <Icon>https://github.com/pbinks/unraid-docker-registry/raw/master/shipping.png</Icon>
 </Containers>
